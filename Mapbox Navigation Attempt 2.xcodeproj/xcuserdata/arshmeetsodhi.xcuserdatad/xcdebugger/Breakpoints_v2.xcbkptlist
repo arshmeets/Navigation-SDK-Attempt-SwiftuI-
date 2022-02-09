@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3A0ABE2E-6FF0-48B9-B76D-F1933464A1E5"
+            uuid = "4F883667-EE85-4BDC-BDD7-3BFD18736B2B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Mapbox Navigation Attempt 2/NavigationView.swift"
+            filePath = "Mapbox Navigation Attempt 2/ViewModel/ContentModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "makeUIViewController(context:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "setRoute()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

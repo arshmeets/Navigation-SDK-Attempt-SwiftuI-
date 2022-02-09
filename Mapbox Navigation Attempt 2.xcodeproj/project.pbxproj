@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6414FF7927B2984E00687C0C /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6414FF7827B2984E00687C0C /* ContentModel.swift */; };
 		6459E32727A1077C00D02C69 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6459E32627A1077C00D02C69 /* MapboxMaps */; };
 		6459E32B27A10A4800D02C69 /* MapboxCoreNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 6459E32A27A10A4800D02C69 /* MapboxCoreNavigation */; };
 		6459E32D27A10A4800D02C69 /* MapboxNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 6459E32C27A10A4800D02C69 /* MapboxNavigation */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6414FF7827B2984E00687C0C /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		64E05F3327A24CBE005A56C5 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		64E092CF27A0FFAF00B4D8E7 /* Mapbox Navigation Attempt 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mapbox Navigation Attempt 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E092D227A0FFAF00B4D8E7 /* Mapbox_Navigation_Attempt_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapbox_Navigation_Attempt_2App.swift; sourceTree = "<group>"; };
@@ -43,6 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6414FF7727B2982F00687C0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64E092D427A0FFAF00B4D8E7 /* ContentView.swift */,
+				64E092E227A101DA00B4D8E7 /* MapBoxMapView.swift */,
+				64E05F3327A24CBE005A56C5 /* NavigationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6414FF7A27B29F7200687C0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6414FF7827B2984E00687C0C /* ContentModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		64E092C627A0FFAF00B4D8E7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +82,10 @@
 		64E092D127A0FFAF00B4D8E7 /* Mapbox Navigation Attempt 2 */ = {
 			isa = PBXGroup;
 			children = (
-				64E092E027A100D100B4D8E7 /* Mapbox-Navigation-Attempt-2-Info.plist */,
 				64E092D227A0FFAF00B4D8E7 /* Mapbox_Navigation_Attempt_2App.swift */,
-				64E092D427A0FFAF00B4D8E7 /* ContentView.swift */,
-				64E092E227A101DA00B4D8E7 /* MapBoxMapView.swift */,
-				64E05F3327A24CBE005A56C5 /* NavigationView.swift */,
+				6414FF7A27B29F7200687C0C /* ViewModel */,
+				6414FF7727B2982F00687C0C /* Views */,
+				64E092E027A100D100B4D8E7 /* Mapbox-Navigation-Attempt-2-Info.plist */,
 				64E092D627A0FFAF00B4D8E7 /* Assets.xcassets */,
 				64E092D827A0FFAF00B4D8E7 /* Preview Content */,
 			);
@@ -162,6 +181,7 @@
 			files = (
 				64E092D527A0FFAF00B4D8E7 /* ContentView.swift in Sources */,
 				64E092D327A0FFAF00B4D8E7 /* Mapbox_Navigation_Attempt_2App.swift in Sources */,
+				6414FF7927B2984E00687C0C /* ContentModel.swift in Sources */,
 				64E05F3427A24CBE005A56C5 /* NavigationView.swift in Sources */,
 				64E092E327A101DA00B4D8E7 /* MapBoxMapView.swift in Sources */,
 			);

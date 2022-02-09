@@ -11,18 +11,7 @@ struct ContentView: View {
     @State var presentingModal = false
     
     var body: some View {
-        ZStack {
-            MapBoxMapView()
-                .ignoresSafeArea()
-            Button("Present") {
-                self.presentingModal = true
-            }
-            .sheet(isPresented: $presentingModal) {
-                NavigationView(presentedAsModal: self.$presentingModal)
-            }
-
-        }
-
+        NavigationView()
     }
 }
 

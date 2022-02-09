@@ -11,30 +11,17 @@ import MapboxNavigation
 import MapboxDirections
 
 struct NavigationView: UIViewControllerRepresentable {
+    @EnvironmentObject var model: ContentModel
+     
     func makeCoordinator() -> NavigationView.Coordinator {
         Coordinator(self)
     }
-    
-    let origin = Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.9131752, longitude: -77.0324047), coordinateAccuracy: 20, name: "Mapbox")
-    let destination = Waypoint(coordinate: CLLocationCoordinate2D(latitude: 38.8977, longitude: -77.0365), coordinateAccuracy: 20, name: "White House")
-
             
     func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationView>) -> NavigationViewController {
-        let routeOptions = NavigationRouteOptions(waypoints: [origin, destination], profileIdentifier: .automobile)
-        var routeResponse: RouteResponse?
-        
-        Directions.shared.calculate(routeOptions) { session, result in
-            switch result {
-            case .failure(let error):
-                print(error.localizedDescription)
-            case.success(let response):
-                // Pass the first generated route to the navigationViewController
-                routeResponse.self = response
-            }
-        }
+        model.setRoute()
         
         
-        let navigationViewController = NavigationViewController(for: routeResponse!, routeIndex: 0, routeOptions: routeOptions)
+        let navigationViewController = NavigationViewController(for: model.routeResponse!, routeIndex: 0, routeOptions: model.routeOptions!)
         navigationViewController.delegate = context.coordinator
         navigationViewController.modalPresentationStyle = .fullScreen
         return navigationViewController

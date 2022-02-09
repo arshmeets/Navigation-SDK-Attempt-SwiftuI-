@@ -12,6 +12,7 @@ struct Mapbox_Navigation_Attempt_2App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ContentModel())
         }
     }
 }
